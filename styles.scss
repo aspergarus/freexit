@@ -1,0 +1,93 @@
+$elem-width: 120px;
+$height: (100% / 2);
+
+@mixin bordered {
+    border: 10px rgba(102,51,102,.9) dashed;
+    box-sizing: border-box;
+}
+
+/**
+ * Fix styles
+ */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/**
+ * Game design
+ */
+div {
+  text-align: center;
+  font-size: 32px;
+  background: rgba(51,153,51, 0.5);
+}
+
+.task {
+  width: 80%;
+}
+
+.task__card {
+  @include bordered;
+}
+
+.task__question {
+  @include bordered;
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game_zone {
+  @include bordered;
+  
+  width: 100%;
+  height: $height;
+}
+
+.oponents {
+  width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.oponent {
+  @include bordered;
+}
+
+.game_canvas {
+  display: flex;
+  flex: row;
+}
+
+.player {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card {
+  @include bordered;
+  width: 15%;
+}
