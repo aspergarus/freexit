@@ -39,8 +39,20 @@ li {
     width: 50%;
 }
 
+.chat__title {
+    box-sizing: border-box;
+
+    border: 3px solid aquamarine;
+    border-top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    font-size: 32px;
+    color: darkslategrey;
+}
+
 .chat__list {
-    height: 90%;
+    height: 80%;
     overflow-y: auto;
 }
 
@@ -56,11 +68,49 @@ li {
     width: 25%;
 }
 
+.games__title {
+    box-sizing: border-box;
+
+    border: 3px solid aquamarine;
+    border-top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    font-size: 32px;
+    color: darkslategrey;
+}
+
+.games__names {
+    font-size: 28px;
+    color: darkred;
+    height: 90%;
+    overflow-y: auto;
+}
+
 .users {
     @include bordered;
     
     height: 50%;
     width: 25%;
+}
+
+.users__title {
+    box-sizing: border-box;
+
+    border: 3px solid aquamarine;
+    border-top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    font-size: 32px;
+    color: darkslategrey;
+}
+
+.users__names {
+    font-size: 28px;
+    color: darkred;
+    height: 90%;
+    overflow-y: auto;
 }
 
 .create__form {
