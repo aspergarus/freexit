@@ -42,9 +42,36 @@ li {
   height: 80%;
   overflow-y: auto; }
 
+.chat__message {
+  margin-bottom: 1rem;
+  text-align: right;
+  background-color: aqua;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem; }
+
+.chat__message:last-of-type {
+  margin-bottom: 0; }
+
+.chat__message--my {
+  margin-bottom: 1rem;
+  text-align: left;
+  background-color: aquamarine;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem; }
+
+.chat__message--my:last-of-type {
+  margin-bottom: 0; }
+
+.chat__members {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+  margin-bottom: 0.5rem; }
+
 .chat__form {
   margin-top: 0.5rem;
   height: 10%; }
+
+.chat__input__message {
+  width: 90%; }
 
 .games {
   border: 10px rgba(102, 51, 102, 0.9) dashed;
@@ -87,6 +114,14 @@ li {
   color: darkred;
   height: 90%;
   overflow-y: auto; }
+
+.users__names--from {
+  font-size: 28px;
+  color: darkred; }
+
+.users__names--to {
+  font-size: 28px;
+  color: chocolate; }
 
 .create__form {
   border: 10px rgba(102, 51, 102, 0.9) dashed;
