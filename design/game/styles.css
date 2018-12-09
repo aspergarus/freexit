@@ -20,16 +20,44 @@ div {
   font-size: 32px;
   background: rgba(51, 153, 51, 0.5); }
 
+.status {
+  font-size: 14px; }
+
 .task {
-  width: 80%; }
+  width: 80%;
+  display: flex;
+  flex-direction: row; }
 
 .task__card {
-  border: 10px rgba(102, 51, 102, 0.9) dashed;
-  box-sizing: border-box; }
+  border: 1px rgba(102, 51, 102, 0.9) dashed;
+  box-sizing: content-box;
+  height: 100%;
+  width: 30%;
+  position: relative; }
+
+.task__card__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto; }
+
+.task__card__image:hover {
+  box-shadow: 0 0 1rem 0.5rem gold; }
+
+.task__card__image--clicked {
+  color: darkslateblue;
+  box-shadow: 0 0 1rem 0.5rem darkslateblue; }
 
 .task__question {
-  border: 10px rgba(102, 51, 102, 0.9) dashed;
-  box-sizing: border-box; }
+  border: 1px rgba(102, 51, 102, 0.9) dashed;
+  box-sizing: content-box;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .game {
   width: 100%;
@@ -42,24 +70,33 @@ div {
   justify-content: space-between; }
 
 .game_zone {
-  border: 10px rgba(102, 51, 102, 0.9) dashed;
-  box-sizing: border-box;
+  border: 1px rgba(102, 51, 102, 0.9) dashed;
+  box-sizing: content-box;
   width: 100%;
   height: 50%; }
 
 .oponents {
   width: 20%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
 
 .oponent {
-  border: 10px rgba(102, 51, 102, 0.9) dashed;
-  box-sizing: border-box; }
+  border: 1px rgba(102, 51, 102, 0.9) dashed;
+  box-sizing: content-box; }
+
+.oponent--you {
+  background-color: cornsilk; }
+
+.oponent--active {
+  box-shadow: 0 0 1rem 0.5rem gold; }
 
 .game_canvas {
   display: flex;
-  flex: row; }
+  flex-direction: row;
+  justify-content: space-between; }
 
 .player {
   display: flex;
@@ -67,6 +104,7 @@ div {
   justify-content: space-around; }
 
 .card {
-  border: 10px rgba(102, 51, 102, 0.9) dashed;
-  box-sizing: border-box;
-  width: 15%; }
+  border: 1px rgba(102, 51, 102, 0.9) dashed;
+  box-sizing: content-box;
+  width: 15%;
+  position: relative; }
