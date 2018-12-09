@@ -1,0 +1,6 @@
+.npm
+.vscode
+.config
+
+# dependencies
+node_modules/
