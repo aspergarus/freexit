@@ -1,0 +1,185 @@
+@mixin bordered {
+    border: 10px rgba(102,51,102,.9) dashed;
+    box-sizing: border-box;
+}
+
+/**
+ * Fix styles
+ */
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(51,153,51, 0.5);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/**
+ * Login design
+ */
+.wrapper {
+    text-align: center;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.chat {
+    @include bordered;
+
+    height: 50%;
+    width: 50%;
+}
+
+.chat__title {
+    box-sizing: border-box;
+
+    border: 3px solid aquamarine;
+    border-top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    font-size: 32px;
+    color: darkslategrey;
+}
+
+.chat__list {
+    height: 80%;
+    overflow-y: auto;
+}
+
+.chat__message {
+    margin-bottom: 1rem;
+
+    text-align: right;
+    background-color: aqua;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.chat__message:last-of-type {
+    margin-bottom: 0;
+}
+
+.chat__message--my {
+    margin-bottom: 1rem;
+
+    text-align: left;
+    background-color: aquamarine;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.chat__message--my:last-of-type {
+    margin-bottom: 0;
+}
+
+.chat__members {
+    border-bottom: 1px solid rgba(51,51,51,0.5);
+    margin-bottom: 0.5rem;
+}
+
+.chat__form {
+    margin-top: 0.5rem;
+    height: 10%;
+}
+
+.chat__input__message {
+    width: 90%;
+}
+
+.games {
+    @include bordered;
+    
+    height: 50%;
+    width: 25%;
+}
+
+.games__title {
+    box-sizing: border-box;
+
+    border: 3px solid aquamarine;
+    border-top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    font-size: 32px;
+    color: darkslategrey;
+}
+
+.games__names {
+    font-size: 28px;
+    color: darkred;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.users {
+    @include bordered;
+    
+    height: 50%;
+    width: 25%;
+}
+
+.users__title {
+    box-sizing: border-box;
+
+    border: 3px solid aquamarine;
+    border-top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    font-size: 32px;
+    color: darkslategrey;
+}
+
+.users__names {
+    font-size: 28px;
+    color: darkred;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.users__names--from {
+    font-size: 28px;
+    color: darkred;
+}
+
+.users__names--to {
+    font-size: 28px;
+    color: chocolate;
+}
+
+.create__form {
+    @include bordered;
+
+    height: 10%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.create__form__label {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.create__form__gamename {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.create__form__submit {
+    width: 20%;
+    margin: 0 auto;
+    border: 0;
+}

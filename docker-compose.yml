@@ -8,7 +8,7 @@ services:
     working_dir: /root
 
   run:
-    image: advanced_node
+    image: node:8.14.0
     volumes:
       - ./:/root
     working_dir: /root/frontend
@@ -17,8 +17,9 @@ services:
     command: yarn start
 
   npm:
-    image: advanced_node
+    image: node:8.14.0
     volumes:
       - ./:/root
+      - /root/.git
     working_dir: /root/frontend
     entrypoint: npm
