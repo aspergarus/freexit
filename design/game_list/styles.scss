@@ -24,7 +24,7 @@ li {
 /**
  * Login design
  */
-.wrapper {
+.gameslist__wrapper {
     text-align: center;
     height: 900px;
     display: flex;
@@ -32,14 +32,14 @@ li {
     flex-wrap: wrap;
 }
 
-.chat {
+.gameslist__chat {
     @include bordered;
 
     height: 50%;
     width: 50%;
 }
 
-.chat__title {
+.gameslist__chat__title {
     box-sizing: border-box;
 
     border: 3px solid aquamarine;
@@ -51,12 +51,12 @@ li {
     color: darkslategrey;
 }
 
-.chat__list {
+.gameslist__chat__list {
     height: 80%;
     overflow-y: auto;
 }
 
-.chat__message {
+.gameslist__chat__message {
     margin-bottom: 1rem;
 
     text-align: right;
@@ -65,11 +65,11 @@ li {
     padding: 0.5rem 1rem;
 }
 
-.chat__message:last-of-type {
+.gameslist__chat__message:last-of-type {
     margin-bottom: 0;
 }
 
-.chat__message--my {
+.gameslist__chat__message--my {
     margin-bottom: 1rem;
 
     text-align: left;
@@ -78,32 +78,40 @@ li {
     padding: 0.5rem 1rem;
 }
 
-.chat__message--my:last-of-type {
+.gameslist__chat__message--my:last-of-type {
     margin-bottom: 0;
 }
 
-.chat__members {
+.gameslist__chat__text {
+    font-size: 1.2rem;
+}
+
+.gameslist__chat__members {
     border-bottom: 1px solid rgba(51,51,51,0.5);
     margin-bottom: 0.5rem;
 }
 
-.chat__form {
+.gameslist__chat__form {
     margin-top: 0.5rem;
     height: 10%;
 }
 
-.chat__input__message {
+.gameslist__chat__input {
     width: 90%;
 }
 
-.games {
+.gameslist__chat__submit {
+    // @TODO: add style for button 'Send'
+}
+
+.gameslist__games {
     @include bordered;
     
     height: 50%;
     width: 25%;
 }
 
-.games__title {
+.gameslist__games__title {
     box-sizing: border-box;
 
     border: 3px solid aquamarine;
@@ -115,21 +123,21 @@ li {
     color: darkslategrey;
 }
 
-.games__names {
+.gameslist__games__names {
     font-size: 28px;
     color: darkred;
     height: 90%;
     overflow-y: auto;
 }
 
-.users {
+.gameslist__users {
     @include bordered;
     
     height: 50%;
     width: 25%;
 }
 
-.users__title {
+.gameslist__users__title {
     box-sizing: border-box;
 
     border: 3px solid aquamarine;
@@ -141,24 +149,24 @@ li {
     color: darkslategrey;
 }
 
-.users__names {
+.gameslist__users__names {
     font-size: 28px;
     color: darkred;
     height: 90%;
     overflow-y: auto;
 }
 
-.users__names--from {
+.gameslist__users__names--from {
     font-size: 28px;
     color: darkred;
 }
 
-.users__names--to {
+.gameslist__users__names--to {
     font-size: 28px;
     color: chocolate;
 }
 
-.create__form {
+.gamelist__create__form {
     @include bordered;
 
     height: 10%;
@@ -168,17 +176,17 @@ li {
     flex-direction: column;
 }
 
-.create__form__label {
+.gamelist__create__form__label {
     width: 20%;
     margin: 0 auto;
 }
 
-.create__form__gamename {
+.gamelist__create__form__gamename {
     width: 20%;
     margin: 0 auto;
 }
 
-.create__form__submit {
+.gamelist__create__form__submit {
     width: 20%;
     margin: 0 auto;
     border: 0;

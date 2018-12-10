@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+import from "./App.scss";
+
 import Home from "../Home";
 import GamesList from "../GamesList";
 import Game from "../Game";

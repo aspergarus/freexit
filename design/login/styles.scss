@@ -24,37 +24,46 @@ li {
 /**
  * Login design
  */
-.wrapper {
+.home__wrapper {
     text-align: center;
-    height: 900px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
 }
 
+.home__content {
+    // @TODO: make additional styles for form
+}
 
-.loginform__content {
+.home__form {  
     margin-top: 1rem;
-
     display: flex;
     flex-direction: column;
 }
 
-.loginform__user {
+.home__user {
     text-align: center;
     width: 25%;
     margin: 0 auto;
     border: 0;
 }
 
-.loginform__pass {
+.home__pass {
     text-align: center;
     width: 25%;
     margin: 0 auto;
     border: 0;
 }
 
-.loginform__submit {
+.home__submit {
     width: 25%;
     margin: 0 auto;
     padding: 0;
@@ -62,6 +71,6 @@ li {
     margin-top: 0.5rem;
 }
 
-.loginform__submit:hover {
+.home__submit:hover {
     outline: 1px black solid;
 }
