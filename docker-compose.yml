@@ -20,5 +20,6 @@ services:
     image: advanced_node
     volumes:
       - ./:/root
+      - /root/.git
     working_dir: /root/frontend
     entrypoint: npm
