@@ -1,0 +1,151 @@
+$elem-width: 120px;
+$height: (100% / 2);
+
+$oponents-shadow-width: 0.5rem;
+
+@mixin bordered {
+    border: 1px rgba(102,51,102,.9) dashed;
+    box-sizing: content-box;
+}
+
+@mixin active {
+    box-shadow: 0 0 1rem $oponents-shadow-width gold;
+}
+
+/**
+ * Fix styles
+ */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/**
+ * Game design
+ */
+div {
+  text-align: center;
+  font-size: 32px;
+  background: rgba(51,153,51, 0.5);
+}
+
+.status {
+  font-size: 14px;
+}
+
+.task {
+  width: 80%;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.task__card {
+  @include bordered;
+
+  height: 100%;
+  width: 30%;
+
+  position:relative;
+}
+
+.task__card__image {
+  position:absolute;
+
+  top:0;
+  bottom:0;
+  right: 0;
+  left: 0;
+
+  margin:auto;
+}
+
+.task__card__image:hover {
+  @include active;
+}
+
+.task__card__image--clicked {
+  color: darkslateblue;
+  box-shadow: 0 0 1rem $oponents-shadow-width darkslateblue;
+}
+
+.task__question {
+  @include bordered;
+  
+  height: 100%;
+  width: 70%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game_zone {
+  @include bordered;
+  
+  width: 100%;
+  height: $height;
+}
+
+.oponents {
+  width: 20%;
+
+  margin-left: $oponents-shadow-width;
+  margin-right: $oponents-shadow-width;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.oponent {
+  @include bordered;
+}
+
+.oponent--you {
+  background-color: cornsilk;
+}
+
+.oponent--active {  
+  @include active;
+}
+
+.game_canvas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.player {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card {
+  @include bordered;
+  width: 15%;
+  
+  position: relative;
+}

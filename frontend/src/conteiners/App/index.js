@@ -8,7 +8,7 @@ import Game from "../Game";
 const App = () => (
   <Router>
     <div>
-      <nav>
+      <nav style={{"position": "fixed", "top": 0, "left": 0}}>
         <ul>
           <li>
             <Link to="/">Home</Link>
