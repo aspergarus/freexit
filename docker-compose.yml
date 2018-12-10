@@ -11,6 +11,8 @@ services:
     image: node:8.14.0
     volumes:
       - ./:/root
+      - /root/.git
+      - /root/frontend/node_modules
     working_dir: /root/frontend
     ports:
       - 3000:3000
@@ -22,4 +24,6 @@ services:
       - ./:/root
       - /root/.git
     working_dir: /root/frontend
+    ports:
+      - 3000:3000
     entrypoint: npm

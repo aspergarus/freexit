@@ -1,64 +1,3 @@
-/**
- * Fix styles
- */
-body {
-  margin: 0;
-  padding: 0; }
-
-ul {
-  padding: 0;
-  margin: 0; }
-
-li {
-  list-style-type: none; }
-
-/**
- * Game design
- */
-div {
-  text-align: center;
-  font-size: 32px;
-  background: rgba(51, 153, 51, 0.5); }
-
-.status {
-  font-size: 14px; }
-
-.task {
-  width: 80%;
-  display: flex;
-  flex-direction: row; }
-
-.task__card {
-  border: 1px rgba(102, 51, 102, 0.9) dashed;
-  box-sizing: content-box;
-  height: 100%;
-  width: 30%;
-  position: relative; }
-
-.task__card__image {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto; }
-
-.task__card__image:hover {
-  box-shadow: 0 0 1rem 0.5rem gold; }
-
-.task__card__image--clicked {
-  color: darkslateblue;
-  box-shadow: 0 0 1rem 0.5rem darkslateblue; }
-
-.task__question {
-  border: 1px rgba(102, 51, 102, 0.9) dashed;
-  box-sizing: content-box;
-  height: 100%;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
 .game {
   width: 100%;
   height: 100%;
@@ -69,13 +8,16 @@ div {
   flex-direction: column;
   justify-content: space-between; }
 
-.game_zone {
+.game__status {
+  font-size: 14px; }
+
+.game__zone {
   border: 1px rgba(102, 51, 102, 0.9) dashed;
   box-sizing: content-box;
   width: 100%;
   height: 50%; }
 
-.oponents {
+.game__oponents {
   width: 20%;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -83,27 +25,63 @@ div {
   flex-direction: column;
   justify-content: space-around; }
 
-.oponent {
+.game__oponent {
   border: 1px rgba(102, 51, 102, 0.9) dashed;
   box-sizing: content-box; }
 
-.oponent--you {
+.game__oponent--you {
   background-color: cornsilk; }
 
-.oponent--active {
+.game__oponent--active {
   box-shadow: 0 0 1rem 0.5rem gold; }
 
-.game_canvas {
+.game__canvas {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
 
-.player {
+.game__task {
+  width: 80%;
+  display: flex;
+  flex-direction: row; }
+
+.game__task__card {
+  border: 1px rgba(102, 51, 102, 0.9) dashed;
+  box-sizing: content-box;
+  height: 100%;
+  width: 30%;
+  position: relative; }
+
+.game__task__card__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto; }
+
+.game__task__card__image:hover {
+  box-shadow: 0 0 1rem 0.5rem gold; }
+
+.game__task__card__image--clicked {
+  color: darkslateblue;
+  box-shadow: 0 0 1rem 0.5rem darkslateblue; }
+
+.game__task__question {
+  border: 1px rgba(102, 51, 102, 0.9) dashed;
+  box-sizing: content-box;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.game__player {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
 
-.card {
+.game__card {
   border: 1px rgba(102, 51, 102, 0.9) dashed;
   box-sizing: content-box;
   width: 15%;

@@ -1,0 +1,16 @@
+/**
+ * Fix styles
+ */
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(51, 153, 51, 0.5); }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style-type: none; }
+
+/*# sourceMappingURL=fix.css.map */
